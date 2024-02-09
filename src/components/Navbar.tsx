@@ -39,7 +39,7 @@ export const Navbar = () => {
 
                                     {user ? null : <span className="h-6 w-px bg-gray-200" aria-hidden='true' />}
 
-                                    {user ? <p></p> : <Link href='sign-in' className={buttonVariants({ variant: 'ghost' })}>Create Account</Link>}
+                                    {user ? <p></p> : <Link href='sign-up' className={buttonVariants({ variant: 'ghost' })}>Create Account</Link>}
 
                                     {user ? <span className="h-6 w-px bg-gray-200" aria-hidden='true' /> : null}
 
