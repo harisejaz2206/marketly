@@ -13,9 +13,6 @@ import { z } from "zod"
 import { AuthCredentialsValidator, TAuthCredentialsValidator } from "@/lib/form-validators/account-credentials.validator"
 
 const Page = () => {
-
-
-
     const { register, handleSubmit, formState: { errors } } = useForm<TAuthCredentialsValidator>({
         resolver: zodResolver(AuthCredentialsValidator)
     })
